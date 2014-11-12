@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+        <title>融云客服-web sdk demo</title>
+        <meta name="keywords" content="融云,即时通讯,即时通讯云,即时通信云,移动 IM,开源 IM,IM 云服务,即时聊天软件,VOIP,移动客服,在线客服,免费,App 开发者服务，融云 Demo ，Web Demo，即时通讯 Demo" />
+        <meta name="description" content="融云 Web Demo 下载体验！"/>
+        <link href="/static/css/main.css" rel="stylesheet">
+        <script src='http://rongcloud-web.qiniudn.com/js_jquery-1.11.1.min.js'></script>
+        <script src='/static/js/jquery.nicescroll.js'></script>
+    </head>
+    <body class="container">
+        <div class="wrap">
+            <div class="left" style="display: none;">
+                <div class="dialog_header header">
+                    <span class="owner_image">
+                        <img src="/static/images/user_img.jpg"/>
+                    </span>
+                    <span class="owner_name">
+                        Jane Chan
+                    </span>
+                    <span class="setting">
+                        <a href="javascript:void(0)"  id="setting"> </a>
+                    </span>
+                </div>
+                <div class="phone_dialog_header">
+                    <span class="logOut">
+                        <a href="javascript:void(0)" title="退出"></a>
+                    </span>
+                    融云
+                    <span class="addrBtn">
+                        <a href="javascript:void(0)" title="联系人"></a>
+                    </span>
+                </div>
+                <div class="settingView">
+                    <span class="volSetting"><a href="javascipt:void(0)"><font></font>开启声音</a></span>
+                    <hr>
+                    <span class="logOut"><a href="javascipt:void(0)" class="hover"><font></font>退出登录</a></span>
+                </div>
+                <div class="listOperatorContent">
+                    <div class="conversationBtn selected">
+                        <a href="javascript:void(0)" title="聊天"><span><font
+                                    class="msgNum">10</font></span></a>
+                    </div>
+                    <div class="cutOffRule" style="width: 2px;"></div>
+                    <div class="addrBtn">
+                        <a href="javascript:void(0)" title="通讯录"><span></span></a>
+                    </div>
+                </div>
+                <div class="listConversation list" style="display: none;">
+                    <ul>
+                        <li class="now">
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">12</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">12</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">12</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">12</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">1212</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">12</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">0</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">0</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">0</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user_img.jpg"/>
+                                <font class="conversation_msg_num">0</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                        <li class=>
+                            <span class="user_img">
+                                <img src="/static/images/user.png"/>
+                                <font class="conversation_msg_num">12</font>
+                            </span>
+                            <span class="conversationInfo">
+                                <p>
+                                    <font class="user_name">融云客服</font>
+                                    <font class="date">13:20</font>
+                                </p>
+                                <p><font>多年专注于移动互联网</font></p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="listAddr list" style="display: ;">
+                    <div class="kefuUser">
+                        <span class="user_img"><img src="/static/images/user.png"/></span>
+                        <span class="user_name">融云客服</span>
+                    </div>
+                    <div class="nameInitials">A</div>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span class="user_img"><img src="/static/images/user.png"/></span>
+                                <span class="user_name">融云客服</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                    </ul>
+                    <div class="nameInitials">B</div>
+                    <ul>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user_img.jpg"/></span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user_img.jpg"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                        <li>
+                            <span class="user_img"><img src="/static/images/user.png"/> </span>
+                            <span class="user_name">融云客服</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_box" style="display: ;">
+                <div class="right">
+                    <div class="dialog_box_header header">
+                        <a href="javascript:void(0)" class="btnBack">＜ 返回 <label></label></a>
+                        dfggfgf
+                    </div>
+                    <div class="dialog_box">
+                        <div class="time_line">---- 9:53 ----</div>
+                        <!-- 其他用户 -->
+                        <div class="other_user user">
+                            <div class="user_img"><img src="/static/images/user.png"/></div>
+                            <div class="msg">
+                                <div class="msgArrow"><img
+                                        src="/static/images/white_arrow.png"></div>
+                                <div class="msgBody">
+                                    Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~
+                                </div>
+                                <div class="status status_error"></div>
+                            </div>
+                        </div>
+                        <div class="slice"></div>
+                        <!-- 当前用户 -->
+                        <div class="self user">
+                            <div class="user_img"><img src="/static/images/user_img.jpg"/>
+                            </div>
+                            <div class="msg">
+                                <div class="msgArrow"><img
+                                        src="/static/images/blue_arrow.png"></div>
+                                <div class="msgBody">Oh,my God! 你妹啊 ！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！  </div>
+                                <div class="status status_error"></div>
+                            </div>
+                        </div>
+                        <div class="slice"></div>
+                        <div class="self user">
+                            <div class="user_img"><img src="/static/images/user_img.jpg"/>
+                            </div>
+                            <div class="msg">
+                                <div class="msgArrow"><img
+                                        src="/static/images/blue_arrow.png"></div>
+                                <div class="msgBody">Oh,my God! 你妹啊 ！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！  </div>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <div class="slice"></div>
+                        <div class="self user">
+                            <div class="user_img"><img src="/static/images/user_img.jpg"/>
+                            </div>
+                            <div class="msg">
+                                <div class="msgArrow"><img
+                                        src="/static/images/blue_arrow.png"></div>
+                                <div class="msgBody">Oh,my God! 你妹啊 ！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！  </div>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <div class="slice"></div>
+                        <div class="self user">
+                            <div class="user_img"><img src="/static/images/user_img.jpg"/>
+                            </div>
+                            <div class="msg">
+                                <div class="msgArrow"><img
+                                        src="/static/images/blue_arrow.png"></div>
+                                <div class="msgBody">Oh,my God! 你妹啊 ！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！  </div>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <div class="slice"></div>
+                        <div class="self user">
+                            <div class="user_img"><img src="/static/images/user_img.jpg"/>
+                            </div>
+                            <div class="msg">
+                                <div class="msgArrow"><img
+                                        src="/static/images/blue_arrow.png"></div>
+                                <div class="msgBody">Oh,my God! 你妹啊 ！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！！Oh,shit! 这破网速，受不鸟了~！Oh,shit! 这破网速，受不鸟了~！  </div>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                    </div>
+                    <div class="slice"></div>
+                    <div class="msg_box" style="display: none;">
+                        <div class="features">
+                            <span class="expression">
+                                <a href="javascript:void(0)" title="表情"></a>
+                            </span>
+                            <span class="img">
+                                <a href="javascript:void(0)" title="发送图片"></a>
+                            </span>
+                            <span class="record">
+                                <a href="javascript:void(0)" title="聊天记录"><font></font>聊天记录</a>
+                            </span>
+                        </div>
+                        <div class="input_box">
+                            <div class="button_box">
+                                <span><button>发送</button></span>
+                                <span><font>Ctrl + Enter</font></span>
+                            </div>
+                            <div class="text_box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            © 2014 Rong Cloud. All Rights Reserver. 1.0
+        </div>
+    </body>
+    <script src="/static/js/common.js"></script>
+</html>
