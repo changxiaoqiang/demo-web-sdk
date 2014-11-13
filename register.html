@@ -88,16 +88,7 @@
                                 case 200:
                                     var val = Util.JSONParse(xhr.responseText);
                                     if (val.code == 200) {
-                                        var _xhr = Util.XHR();
-                                        _xhr.open("get", "/activate?mobile=" + input[1].value + "&code=2000", false);
-                                        _xhr.onreadystatechange = function () {
-                                            if (_xhr.readyState == 4 && _xhr.status == 200)
-                                                if (_xhr.responseText.indexOf("200") == 8)
-                                                    location.href = "login.html";
-                                                else
-                                                    alert("注册成功，但是账号激活失败")
-                                        };
-                                        _xhr.send(null);
+                                        location.href = "login.html";
                                         return;
                                     } else {
                                         alert("注册失败")
@@ -143,7 +134,7 @@
         <a href="login.html">已注册帐号? 立刻登录</a>
     </div>
 </div>
-<div class="login-footer">© 2014 Rong Cloud. All Rights Reserver. 1.0</div>
+<div class="login-footer">© 2014 Rong Cloud. V 0.9.0</div>
 </body>
 <script type="text/javascript">
 

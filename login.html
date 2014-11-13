@@ -15,7 +15,7 @@
         $(function () {
             var input = $("input");
             input.blur(function () {
-                var that = $(this), val = that.val().trim(), type = that.attr("type");
+                var that = $(this), val = $.trim(that.val()), type = that.attr("type");
                 if ((/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/.test(val) && type == "text") || (/[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,18}$/.test(val) && type == "password")) {
                     that.next().addClass("hidden");
                 } else {
@@ -72,7 +72,7 @@
         <a href="register.html">注册帐号</a><a href="qr.html" id="jihuo" style="margin-left: 20px">手机登录</a>
     </div>
 </div>
-<div class="login-footer">© 2014 Rong Cloud. All Rights Reserver. 1.0</div>
+<div class="login-footer">© 2014 Rong Cloud. V 0.9.0</div>
 </body>
 <script type="text/javascript">
 

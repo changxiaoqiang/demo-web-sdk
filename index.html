@@ -14,8 +14,13 @@
     <script src='static/js/jquery.nicescroll.js'></script>
     <script src="static/js/angular.min.js"></script>
     <script src="static/js/controller.js"></script>
+    <script src="static/js/RongIMClient.voice.js"></script>
 </head>
 <body class="container">
+<div class="bro_notice" style="display: none; background-color: #FCF8E3; color: #000;text-align: center;margin: 0 auto;">
+    <p>Web SDK Demo 正处于测试阶段，部分浏览器会有兼容问题，有问题请您 <a style="color: #428BCA;" href="https://developer.rongcloud.cn/ticket/create" target="_blank">提工单反馈。</a> 此 Demo 只做 Web SDK 演示，只截取部分好友显示。
+    </p>
+</div>
 <div class="wrap" ng-controller="RongC_chaInfo">
     <div class="left" >
         <div class="dialog_header header">
@@ -23,7 +28,6 @@
                         <img ng-src="{{owner.portrait}}"/>
                     </span>
                     <span class="owner_name" ng-bind="owner.name">
-
                     </span>
                     <span class="setting">
                         <a href="javascript:void(0)" id="setting"><label></label> </a>
@@ -93,7 +97,7 @@
             <div class="nameInitials">好友列表</div>
             <ul id="friendsList" ng-model="friendsList">
                 <li ng-click="ConversationClick(4,item.id,item.username)" ng-repeat="item in friendsList">
-                    <span class="user_img"><img ng-src="{{item.portrait}}"/></span> <span
+                    <span class="user_img"><img ng-src="{{'static/images/user.png'||item.portrait}}"/></span> <span
                         class="user_name">{{item.username}}</span>
                 </li>
             </ul>
@@ -142,7 +146,7 @@
     </div>
 </div>
 <div class="footer">
-    © 2014 Rong Cloud. All Rights Reserver. 1.0
+    © 2014 Rong Cloud. V 0.9.0
 </div>
 </body>
 <script src="static/js/RongIMClient.Expression.js"></script>
